@@ -1,0 +1,29 @@
+
+.purchase-wrapper  {
+    //@include themify($themes) {
+        background-color: white;
+    border-radius: 12px;
+    padding: 0 20px;
+    flex: 9 1;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        .purchase-heading {
+            display: flex;
+            align-items: center;
+            .purchase-heading-item {
+                padding: 16px 0;
+                flex: 1;
+                text-align: center;
+                text-decoration: none;
+                color: themed("textBold");
+                border-bottom: 2px solid transparent;
+                &.active {
+                    border-bottom: 2px solid #d83131;
+                    color: #d83131;
+                }
+            }
+        }
+        .purchase-content {
+            padding: 20px 0;
+        }
+    //}
+}

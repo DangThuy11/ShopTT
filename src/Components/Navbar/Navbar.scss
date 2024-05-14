@@ -1,0 +1,110 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    // padding: 16px;
+    padding: 12px 50px;
+    box-shadow: 0px 1px 3px -2px black;
+    align-items: center;
+     
+    .nav-logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .nav-img{
+            width: 40px;
+        }
+        p{
+            color: #171717;
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+    // .nav-menu{
+    //     display: flex;
+    //     color: #626262; 
+    //     font-weight: 500;
+    //     list-style: none;
+    //     gap: 30px;
+    //     font-size: 16px;
+    //     .nav-menu-li{
+    //         display: flex;
+    //         flex-direction: column;
+    //         align-items: center;
+    //         justify-content: center;
+    //         gap: 3px;
+    //         cursor: pointer;
+
+            
+    //     }
+    //     hr{
+    //         border: none;
+    //         width: 80%;
+    //         height: 3px;
+    //         border-radius: 10px;
+    //         background: #FF4141;
+    //     }
+    // }
+    .nav-list{
+        display: flex;
+        gap: 15px;
+        .nav-icon{
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .nav-icon-free{
+            display: flex;
+            width: 40px;
+            text-align: center;
+            background: #ff4141;
+            border-radius: 100px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-left: 7px;
+            align-items: center;
+            padding: 0 7px;
+            color: rgb(218, 205, 205);
+        }
+    }
+    .nav-login-cart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        button{
+            width: 120px;
+            height: 45px;
+            font-size: 16px;    
+            outline: none;
+            border: 1px solid #7a7a7a;
+            border-radius: 75px;
+            color: #515151;
+            font-weight: 300;
+            background-color: white;
+            cursor: pointer;
+
+        }
+        button:hover{
+            background-color: #f3f3f3;
+        }
+        img{
+            height: 28px;
+            width: 28px;
+        }
+        .nav-cart-count{
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -30px;
+            margin-left: -40px;
+            font-size: 12px;
+            border-radius: 11px;
+            background-color: #FF4141;
+            color: white;
+        }
+        .nav-profile{
+            font-size: 20px;
+        }
+    }
+}

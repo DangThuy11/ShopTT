@@ -1,0 +1,58 @@
+export const products = [
+    {
+      id:1,
+      name:"Áo giữ nhiệt nam",
+      price:"50",
+      old_price:"88",
+      img:"https://bizweb.dktcdn.net/100/438/408/products/ao-polo-nam-vai-cafe-to-ong-yody-apm7125-nav-6.jpg?v=1712718642113",
+    },
+    {
+      id:2,
+      name:"Áo giữ nhiệt nam",
+      price:"50",
+      old_price:"88",
+      img:"https://bizweb.dktcdn.net/100/438/408/products/bo-do-tre-em-bdk7166-tpt-2-yodyvn.jpg?v=1712715720067",
+    },
+    {
+      id:3,
+      name:"Áo giữ nhiệt nam",
+      price:"50",
+      old_price:"88",
+      img:"https://bizweb.dktcdn.net/100/438/408/products/ao-thun-nam-yody-tsm5289-dod-1.jpg?v=1710206507113",
+    },
+    {
+      id:4,
+      name:"Áo giữ nhiệt nam",
+      price:"50",
+      old_price:"88",
+      img:"https://bizweb.dktcdn.net/100/438/408/products/ao-polo-nu-apn7096-vag-2.jpg?v=1705636590033",
+    },
+    {
+      id:5,
+      name:"Áo giữ nhiệt nam",
+      price:"50",
+      old_price:"88",
+      img:"https://bizweb.dktcdn.net/100/438/408/products/tsk7134-tvx-5.jpg?v=1711504825337",
+    },
+    {
+      id:6,
+      name:"Áo giữ nhiệt nam",
+      price:"50",
+      old_price:"88",
+      img:"https://bizweb.dktcdn.net/100/438/408/products/smm4073-tit-qam3190-ghs-1.jpg?v=1690163848063",
+    },
+    {
+      id:7,
+      name:"Áo giữ nhiệt nam",
+      price:"50",
+      old_price:"88",
+      img:"https://bizweb.dktcdn.net/100/438/408/products/svn5096-ghi-apn5046-den-7.jpg?v=1704250579117",
+    },
+    {
+      id:8,
+      name:"Áo giữ nhiệt nam",
+      price:"50",
+      old_price:"88",
+      img:"https://bizweb.dktcdn.net/100/438/408/products/cvn5096-den-apn5046-ddo-1.jpg?v=1690163788930",
+    },
+  ]

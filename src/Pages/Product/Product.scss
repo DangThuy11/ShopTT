@@ -1,0 +1,137 @@
+.product-display{
+    h1{
+        margin-top: 20px;
+        color: #656565;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    display: flex;
+    margin: 10px 60px;
+    .product-display-left{
+        display: flex;
+        gap: 10px;
+
+        .left-img{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            img{
+                height: 143px;
+            }
+        }
+        .img{
+            width: 550px;
+            .main-img{
+                height: 600px;
+                width: 550px;
+            }
+        }
+    }
+    .product-display-right{
+        margin: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        h1{
+            margin-top: 20px;
+            color: #656565;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .right-star{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            gap: 3px;
+            color: #1c1c1c;
+            font-size: 14px;
+        }
+        .right-prices{
+            display: flex;
+            margin: 10px 0px;
+            gap: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            .old{
+                color: #818181;
+                text-decoration: line-through;
+
+            }
+            .new{
+                color: #ff4141;
+            }
+        }
+        .desc{
+            font-size: 14px;
+        }
+        .right-size {
+            h1 {
+                margin-top: 20px;
+                color: #656565;
+                font-size: 20px;
+                font-weight: 500;
+            }
+        
+            .right-sizes {
+                display: flex;
+                margin: 25px 0px;
+                gap: 15px;
+        
+                button {
+                    width: 80px;
+                    height: 60px;
+                    background: #fbfbfb;
+                    color: black;
+                    border: 1px solid #ebebeb;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+        
+                .selected {
+                    border: 2px solid red;
+                }
+            }
+        }
+        
+        .amount {
+            margin: 20px 0px;
+            display    : flex;
+            gap        : 10px;
+            align-items: center;
+
+            .cout {
+                font-size: 16px;
+            }
+
+            .number {
+                font-weight    : 300;
+                width          : 20px;
+                height         : 20px;
+                display        : flex;
+                align-items    : center;
+                justify-content: center;
+                border         : 2px solid rgb(133, 133, 231);
+                border-radius  : 6px;
+            }
+        }
+        button{
+            padding: 15px 0px;
+            width: 150px;
+            font-size: 16px;
+            font-weight: 500;
+            color: white;
+            background: #ff4141;
+            margin-bottom: 20px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .right-category{
+            margin-top: 5px;
+            font-size: 14px;
+            span{
+                font-weight: 500;
+            }
+        }
+    }
+}
