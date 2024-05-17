@@ -13,7 +13,15 @@ const ProductList = () => {
     // console.log(location);
     const cat = location.pathname.split("/")[2];
     // console.log(cat);
-    const [sort,setSort] = useState("newest")
+    const [sort, setSort] = useState("newest")
+    const [filters, setFilters] = useState({});
+    const handleFilters = (e) => {
+        const value = e.target.value;
+        setFilters({
+            ...filters,
+            [e.target.name]: value
+        });
+    };
     return (
         <>
             <div className='shop-category'>
@@ -24,16 +32,26 @@ const ProductList = () => {
                     </p>
                     <div className="filter">
                         <span className="filterText">
+                            Filter Products:
+                        </span>
+                        <select className="size" name="size" onChange={handleFilters}>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="L">L</option>
+                            <option value="M">M</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <span className="filterText">
                             Sort Products:
                         </span>
-                        <select className="selectNewletter" name="asc" onChange={(e) =>setSort(e.target.value)}>
+                        <select className="selectNewletter" name="asc" onChange={(e) => setSort(e.target.value)}>
                             <option value="newest">Mới Nhất</option>
                             <option value="asc">Giá Tăng</option>
                             <option value="desc">Giá Giảm</option>
                         </select>
                     </div>
                 </div>
-                <Products sort={sort} cat={cat}/>
+                <Products sort={sort} filters={filters} cat={cat} />
                 <div className="loadmode">
                     Explore Mode
                 </div>

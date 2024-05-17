@@ -10,7 +10,7 @@ const CategoryItem = ({item}) => {
             <h1>
                 {item.title}
             </h1>
-            <button>SHOW NOW</button>
+            <button>XEM NGAY</button>
         </div>
     </div>
     </Link>

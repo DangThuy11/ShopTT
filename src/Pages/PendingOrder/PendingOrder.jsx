@@ -25,8 +25,9 @@ const PendingOrder = () => {
   return (
     <>
       {listOrder.map(order => (
-        <Order key={order._id} order={order} />
+        <Order key={order._id} order={order} status={0} pending />
       ))}
+    
     </>
   )
 }

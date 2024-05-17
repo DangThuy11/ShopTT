@@ -3,8 +3,8 @@ import './NewsLetter.scss'
 const NewsLetter = () => {
   return (
     <div className='newsletter'>
-        <h1>Get Exclusive Ofeers on your email</h1>
-        <p>Subscribe to our newsletter and stay update</p>
+        <h1>Nhận ưu đãi độc quyền trên email của bạn</h1>
+        <p>Đăng ký nhận bản tin của chúng tôi  ❤️</p>
         <div>
             <input type="email" placeholder='Your email id' />
             <button>Subscribe</button>

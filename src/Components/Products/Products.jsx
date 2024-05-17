@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Products.scss'
 import Product from '../Product/Product'
 import axios from 'axios';
-const Products = ({cat,sort}) => {
+const Products = ({cat,sort,filters}) => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   console.log('cat',cat);
@@ -21,16 +21,14 @@ const Products = ({cat,sort}) => {
         }
         getProducts();
     }, [cat])
-    // useEffect(() => {
-    //   cat &&
-    //     setFilteredProducts(
-    //       products.filter((item) =>
-    //         Object.entries().every(([key, value]) =>
-    //           item[key].includes(value)
-    //         )
-    //       )
-    //     );
-    // }, [products, cat]);
+    useEffect(() => {
+        cat && setFilteredProducts(
+            products.filter(item => Object.entries(filters).every(([key, value]) =>
+                item[key].includes(value)
+            )
+            )
+        )
+    }, [products, cat,filters]);
 
     useEffect(() => {
         if (sort === "newest") {
@@ -57,7 +55,7 @@ const Products = ({cat,sort}) => {
         <hr />
         <div className='collections-item'>
         {cat
-        ? products.map((item) => <Product item={item} key={item.id} />)
+        ? filteredProducts.map((item) => <Product item={item} key={item.id} />)
         : products
             // .slice(0, 8)
             .map((item) => <Product item={item} key={item.id} />)}

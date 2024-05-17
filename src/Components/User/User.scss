@@ -35,6 +35,16 @@
                 color: red;
             }
         }
+        .logout1{
+            .infor1{
+                background-color: #ff4141;
+                width: 100%;
+                color: white;
+                padding: 5px;
+               border-radius: 20px;
+               border: none;
+            }
+        }
     }
     .profile-center{
         flex: 2;
@@ -65,4 +75,5 @@
 
 .tada-link{
     text-decoration: none;
+    color: black;
   }

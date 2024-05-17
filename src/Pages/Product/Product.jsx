@@ -80,12 +80,12 @@ const Product = () => {
     <>
       <div className='product-display'>
         <div className="product-display-left">
-          <div className="left-img">
+          {/* <div className="left-img">
             <img src={images[0]} alt="" onClick={e => { setSelected(0) }} />
             <img src={images[1]} alt="" onClick={e => { setSelected(1) }} />
             <img src={images[2]} alt="" onClick={e => { setSelected(2) }} />
             <img src={images[3]} alt="" onClick={e => { setSelected(3) }} />
-          </div>
+          </div> */}
           <div className="img">
             <img src={product.img} alt="" className="main-img" />
           </div>

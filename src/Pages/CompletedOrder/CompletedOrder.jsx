@@ -18,13 +18,14 @@ const CompletedOrder = () => {
       } 
       getListProduct()
     }, [currentUser._id]);
+    // console.log('status', status);
   //debugger
   console.log('list', listOrder);
   return (
     <>
       {listOrder.map(order => (
-        <Order key={order._id} order={order} />
-      ))}
+        <Order key={order._id} order={order}  />
+      ))} 
     </>
   )
 }

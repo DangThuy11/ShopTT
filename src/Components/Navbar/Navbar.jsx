@@ -25,9 +25,11 @@ const Navbar = () => {
         <span className='nav-icon'><PhoneOutlined /> 0816313868</span>
       </div>
       <div className="nav-login-cart">
-        <Link to="/login">
-          <button>Login</button>
+        {
+          !currentUser && <Link to="/login">
+          <button>Đăng nhập</button>
         </Link>
+        }
         <Link to='/cart'>
           <img src={cart} alt="" />
         </Link>
@@ -35,7 +37,6 @@ const Navbar = () => {
         <div className="nav-profile">
           {currentUser && <Link to={"/user/profile"} className="user" style={{ textDecoration: "none" }}>
             <span><UserOutlined /></span> Cá nhân
-
           </Link>}
 
         </div>

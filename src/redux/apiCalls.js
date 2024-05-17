@@ -140,3 +140,11 @@ export const searchOrder = async (userId,data) => {
         return []
     }
 }
+export const cancelOrder = async (idOrder) => {
+    try {
+      const response = await userRequest.put('/orders/update-status', { idOrder, status: "3" });
+      return response.data;
+    } catch (error) {
+      throw new Error(error.response.data);
+    }
+  };
